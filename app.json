@@ -1,7 +1,7 @@
 {
-    "name": "Song-Bot",
+    "name": "songbotd",
     "description": "A Modular telegram song bot.",
-    "repository": "https://github.com/shamilhabeebnelli/Song-Bot",
+    "repository": "https://github.com/Judson-web/songbotd",
     "keywords": [
        
         "telegram bot",
@@ -19,7 +19,7 @@
         },
         "OWNER": {
             "description": "Your username without @.",
-            "value": "shamilhabeeb"
+            "value": "VAMPIRE_KING_NO_1"
         },
         "START_MSG": {
             "description": "Start Message of BoT",
