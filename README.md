@@ -4,7 +4,7 @@
 You can download youtube to MP3 from telegram bot #musics
 with & without commands
 ```
-<img src="https://telegra.ph/file/abed36be941ada01ecffd.jpg" alt="photo_2021-08-26_03-05-31.jpg" style="max-width:100%;">
+[![Repo](https://telegra.ph/file/abed36be941ada01ecffd.jpg)](https://github.com/Judson-web)
 
 ## Deploy - Simplest Way
 ##### Deploy - with /song command
