@@ -14,3 +14,14 @@ with & without commands
 
 ## Deploy Hard Way
 No Any Hard Ways Deploy simple way 🤗🤣
+
+API_HASH Required
+Get this value from my.telegram.org
+
+APP_ID Required
+Get this value from my.telegram.org
+
+BOT_TOKEN Required
+Get this value from @BotFather
+
+...........................,,,,,,,,,,,,,,,
