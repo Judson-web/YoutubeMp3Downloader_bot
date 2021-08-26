@@ -12,8 +12,8 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 ABS="Developer"
 APPER="VAMPIRE_KING_NO_1"
 OWNER="Owner"
-GITCLONE="https://github.com/Judson-web"
-B2="https://github.com/Judson-web"
+GITCLONE="github.com/Judson-web/YoutubeMp3Downloader_bot"
+B2="telegram.dog/VAMPIRE_KING_NO_1"
 BUTTON1="📜 Source Code 📜"
 
 def time_to_seconds(time):
@@ -30,7 +30,7 @@ async def start(client, message):
                  ],[
                     InlineKeyboardButton(OWNER, url=f"https://telegram.dog/{Config.OWNER}"),
                     InlineKeyboardButton(ABS, url=B2)
-            ]
+              ]
           ]
         ),
         reply_to_message_id=message.message_id
@@ -43,7 +43,7 @@ def a(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('`Searching Now... Please Wait...:)`')
+    m = message.reply('`Searching... Please Wait...`')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -62,7 +62,7 @@ def a(client, message):
             duration = results[0]["duration"]
             views = results[0]["views"]
 
-            ## UNCOMMENT THIS IF YOU WANT A LIMIT ON DURATION. CHANGE 1800 TO YOUR OWN PREFFERED DURATION AND EDIT THE MESSAGE (30 minutes cap) LIMIT IN SECONDS
+                ## UNCOMMENT THIS IF YOU WANT A LIMIT ON DURATION. CHANGE 1800 TO YOUR OWN PREFFERED DURATION AND EDIT THE MESSAGE (30 minutes cap) LIMIT IN SECONDS
             # if time_to_seconds(duration) >= 7000:  # duration limit
             #     m.edit("Exceeded 30mins cap")
             #     return
@@ -74,7 +74,7 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('**👎 Nothing found Bruh Retry with another:) !**')
+            m.edit('**👎 Nothing found Retry with another !**')
             return
     except Exception as e:
         m.edit(
@@ -82,7 +82,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("`Bro Song is... Uploading... Please Wait...;)`")
+    m.edit("`Bro Song is... Uploading... Please Wait...`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
@@ -96,7 +96,7 @@ def a(client, message):
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
     except Exception as e:
-        m.edit('**An internal Error Occured, Report This @VAMPIRE_KING_NO_1!!**')
+        m.edit('**An internal Error Occured, Report This @redbullfed!!**')
         print(e)
     try:
         os.remove(audio_file)
