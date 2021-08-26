@@ -26,4 +26,4 @@ Get this value from my.telegram.org
 BOT_TOKEN Required
 Get this value from @BotFather
 
-...........................,,,,,,,,,,,,,,,
+...........................,,,,,,,,,,,,,,,,
